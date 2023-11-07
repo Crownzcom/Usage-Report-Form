@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Get the values from the form fields
         var email = document.getElementById('emailAddress').value;
-        var slide = document.getElementById('frameViewed').value;
+        var frame = document.getElementById('frameViewed').value;
         var noFramesViewed = document.getElementById('noFramesViewed').value;
         var totalNoFrames = document.getElementById('totalNoFrames').value;
 
