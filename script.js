@@ -4,12 +4,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Get the values from the form fields
         var email = document.getElementById('emailAddress').value;
-        var slide = document.getElementById('slideViewed').value;
+        var slide = document.getElementById('frameViewed').value;
+        var noFramesViewed = document.getElementById('noFramesViewed').value;
+        var totalNoFrames = document.getElementById('totalNoFrames').value;
 
         // Construct the request payload
         var payload = {
             email_address: email,
-            slide_viewed: slide
+            frame_viewed: frame,
+            no_frames_viewed: noFramesViewed,
+            total_no_frames: totalNoFrames
         };
 
         // Send the data to the Cloudflare Worker endpoint
